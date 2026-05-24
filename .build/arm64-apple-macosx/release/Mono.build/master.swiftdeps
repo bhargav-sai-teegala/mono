@@ -1,0 +1,9 @@
+version: "Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)"
+options: "22810b32aee0c0d0c8b7a494b0a95aaf36005c58aa3dfcfdcd12f1ab76d38984"
+build_start_time: [1779546466, 429223000]
+build_end_time: [1779546470, 583115000]
+inputs:
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift": [1779536258, 542704535]
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift": [1779546356, 251189835]
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift": [1779530787, 220042050]
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift": [1779524924, 57554610]

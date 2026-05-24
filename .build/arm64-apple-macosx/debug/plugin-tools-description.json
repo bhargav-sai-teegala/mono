@@ -1,0 +1,309 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Mono-arm64-apple-macosx16.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/sources",
+      "importPath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Mono",
+      "moduleOutputPath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Modules/Mono.swiftmodule",
+      "objects" : [
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.swift.o",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.swift.o",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.swift.o",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Mono_main",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mono"
+      ],
+      "outputFileMapPath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Modules/Mono.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift",
+        "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift"
+      ],
+      "tempsPath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Mono" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Mono",
+      "-package-name",
+      "mono",
+      "-incremental",
+      "-c",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift",
+      "-I",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Mono_main",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mono",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Mono" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono-entitlement.plist"
+    },
+    "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/sources"
+    },
+    "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.product/Objects.LinkFileList"
+    },
+    "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Mono-arm64-apple-macosx16.0-release.exe": ["<Mono-arm64-apple-macosx16.0-release.exe>"]
+  "Mono-arm64-apple-macosx16.0-release.module": ["<Mono-arm64-apple-macosx16.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Mono-arm64-apple-macosx16.0-release.exe>","<Mono-arm64-apple-macosx16.0-release.module>"]
+  "test": ["<Mono-arm64-apple-macosx16.0-release.exe>","<Mono-arm64-apple-macosx16.0-release.module>"]
+default: "main"
+nodes:
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift"]
+    outputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/sources"]
+    description: "Write auxiliary file /Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/sources"
+
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/AppDelegate.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/ContentView.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/TaskStore.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/main.swift.o"]
+    outputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.product/Objects.LinkFileList"
+
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+
+  "<Mono-arm64-apple-macosx16.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono"]
+    outputs: ["<Mono-arm64-apple-macosx16.0-release.exe>"]
+
+  "<Mono-arm64-apple-macosx16.0-release.module>":
+    tool: phony
+    inputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/AppDelegate.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/ContentView.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/TaskStore.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/main.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Modules/Mono.swiftmodule"]
+    outputs: ["<Mono-arm64-apple-macosx16.0-release.module>"]
+
+  "C.Mono-arm64-apple-macosx16.0-release.exe":
+    tool: shell
+    inputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/AppDelegate.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/ContentView.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/TaskStore.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/main.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.product/Objects.LinkFileList"]
+    outputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono"]
+    description: "Linking ./.build/arm64-apple-macosx/release/Mono"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release","-o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono","-module-name","Mono","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_Mono_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-framework","ServiceManagement","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.Mono-arm64-apple-macosx16.0-release.module":
+    tool: shell
+    inputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/sources"]
+    outputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/AppDelegate.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/ContentView.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/TaskStore.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/main.swift.o","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Modules/Mono.swiftmodule"]
+    description: "Compiling Swift Module 'Mono' (4 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","Mono","-emit-dependencies","-emit-module","-emit-module-path","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Modules/Mono.swiftmodule","-output-file-map","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/output-file-map.json","-whole-module-optimization","-num-threads","8","-c","@/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Mono.build/sources","-I","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-O","-j8","-DSWIFT_PACKAGE","-module-cache-path","/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Mono_main","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","mono"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/","/Users/bhargavsaiteegala/Documents/Apps/Mono/Package.swift","/Users/bhargavsaiteegala/Documents/Apps/Mono/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

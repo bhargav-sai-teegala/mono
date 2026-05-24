@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/master.swiftdeps"
+  },
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/AppDelegate.swift": {
+    "dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.d",
+    "object": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/AppDelegate.swiftdeps"
+  },
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/ContentView.swift": {
+    "dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.d",
+    "object": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.swift.o",
+    "swiftmodule": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/ContentView.swiftdeps"
+  },
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/TaskStore.swift": {
+    "dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.d",
+    "object": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.swift.o",
+    "swiftmodule": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/TaskStore.swiftdeps"
+  },
+  "/Users/bhargavsaiteegala/Documents/Apps/Mono/Sources/Mono/main.swift": {
+    "dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.d",
+    "object": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.swift.o",
+    "swiftmodule": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/bhargavsaiteegala/Documents/Apps/Mono/.build/arm64-apple-macosx/debug/Mono.build/main.swiftdeps"
+  }
+}
